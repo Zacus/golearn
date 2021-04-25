@@ -3,10 +3,7 @@ package main
 import (
 	"log"
 	"os"
-<<<<<<< HEAD
 	"time"
-=======
->>>>>>> 967ca9901e97ba63a7561c7de59b385b826ba407
 )
 
 func main() {
