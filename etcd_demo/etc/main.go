@@ -25,21 +25,22 @@ func main() {
 	defer cli.Close()
 	// put
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second)
-	_, err = cli.Put(ctx, "ming", "sheng")
+	value := `[{"path":"c:/tmp/nginx.log","topic":"web_log"},{"path":"d:/xxx/redis.log","topic":"redis_log"},{"path":"d:/xxx/mysql.log","topic":"mysql_log"}]`
+	_, err = cli.Put(ctx, "/logagent/collect_config", value)
 	cancel()
 	if err != nil {
 		fmt.Printf("put to etcd failed, err:%v\n", err)
 		return
 	}
 	// get
-	ctx, cancel = context.WithTimeout(context.Background(), time.Second)
-	resp, err := cli.Get(ctx, "ming")
-	cancel()
-	if err != nil {
-		fmt.Printf("get from etcd failed, err:%v\n", err)
-		return
-	}
-	for _, ev := range resp.Kvs {
-		fmt.Printf("%s:%s\n", ev.Key, ev.Value)
-	}
+	// ctx, cancel = context.WithTimeout(context.Background(), time.Second)
+	// resp, err := cli.Get(ctx, "ming")
+	// cancel()
+	// if err != nil {
+	// 	fmt.Printf("get from etcd failed, err:%v\n", err)
+	// 	return
+	// }
+	// for _, ev := range resp.Kvs {
+	// 	fmt.Printf("%s:%s\n", ev.Key, ev.Value)
+	// }
 }

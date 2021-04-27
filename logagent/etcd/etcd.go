@@ -51,4 +51,5 @@ func GetConf(key string) (v []*LogEntry, err error) {
 			return
 		}
 	}
+	return
 }

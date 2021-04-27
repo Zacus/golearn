@@ -5,6 +5,7 @@ import (
 	"golearn/logagent/conf"
 	"golearn/logagent/etcd"
 	"golearn/logagent/kafka"
+	"golearn/logagent/taillog"
 	"time"
 
 	"gopkg.in/ini.v1"
@@ -39,7 +40,7 @@ func main() {
 		fmt.Print("init config failed,err:%v\n", err)
 	}
 	//1.初始化kafka连接
-	err = kafka.Init([]string{cfg.KafkaConf.Address})
+	err = kafka.Init([]string{cfg.KafkaConf.Address}, cfg.KafkaConf.ChanMaxSize)
 	if err != nil {
 		fmt.Print("init Kafka failed,err:%v\n", err)
 	}
@@ -54,18 +55,22 @@ func main() {
 	fmt.Println("init etcd sucess")
 
 	//2.1从etcd拉取日志收集项的配置信息
-	LogEntryConf, err := etcd.GetConf(cfg.EtcdConf.Key)
+	logEntryConf, err := etcd.GetConf(cfg.EtcdConf.Key)
 	if err != nil {
 		fmt.Print("get etcd.conf failed,err:%v\n", err)
 		return
 	}
 	fmt.Println("get etcd.conf sucess")
-	for index, value := range LogEntryConf {
+	for index, value := range logEntryConf {
 		fmt.Printf("index:%v value:%v\n", index, value)
 	}
 
 	//2.2设置watch去监视位置收集项目的变化及时通知logAgent实现热加载配置
 	//2.打开日志文件准备收集日志
+	//3.收集日志发往Kafka
+	//3.1 循环每一个日志收集项，创建TailObj
+	taillog.Init(logEntryConf)
+	//发往kafka
 	// err = taillog.Init(cfg.TaillogConf.FileName)
 	// if err != nil {
 	// 	fmt.Printf("Init taillog failed,err:%v\n", err)
