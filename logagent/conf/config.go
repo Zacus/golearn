@@ -1,8 +1,9 @@
 package conf
 
 type AppConf struct {
-	KafkaConf   `ini:"kafka"`
-	TaillogConf `ini:"taillog"`
+	KafkaConf `ini:"kafka"`
+	// TaillogConf `ini:"taillog"`
+	EtcdConf `ini:"etcd"`
 }
 
 type KafkaConf struct {
@@ -12,6 +13,12 @@ type KafkaConf struct {
 
 type TaillogConf struct {
 	FileName string `ini:"path"`
+}
+
+type EtcdConf struct {
+	Address string `ini:"address"`
+	Key     string `ini:"collect_log_key"`
+	Timeout int    `ini:"timeout"`
 }
 
 // func Init() {
