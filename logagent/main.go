@@ -6,6 +6,8 @@ import (
 	"golearn/logagent/etcd"
 	"golearn/logagent/kafka"
 	"golearn/logagent/taillog"
+	"golearn/logagent/utils"
+	"sync"
 	"time"
 
 	"gopkg.in/ini.v1"
@@ -54,22 +56,35 @@ func main() {
 	}
 	fmt.Println("init etcd sucess")
 
+	//实现每个logagent都拉取独有的配置，建立以自身IP地址进行分区
+	ipStr, err := utils.GetOutboundIP()
+	if err != nil {
+		panic(err)
+	}
+	etcdConfKey := fmt.Sprintf(cfg.EtcdConf.Key, ipStr)
 	//2.1从etcd拉取日志收集项的配置信息
-	logEntryConf, err := etcd.GetConf(cfg.EtcdConf.Key)
+	logEntryConf, err := etcd.GetConf(etcdConfKey)
 	if err != nil {
 		fmt.Print("get etcd.conf failed,err:%v\n", err)
 		return
 	}
-	fmt.Println("get etcd.conf sucess")
+	fmt.Printf("get etcd.conf sucess:%v\n", logEntryConf)
+
+	//2.2设置watch去监视位置收集项目的变化及时通知logAgent实现热加载配置
+
 	for index, value := range logEntryConf {
 		fmt.Printf("index:%v value:%v\n", index, value)
 	}
 
-	//2.2设置watch去监视位置收集项目的变化及时通知logAgent实现热加载配置
 	//2.打开日志文件准备收集日志
 	//3.收集日志发往Kafka
 	//3.1 循环每一个日志收集项，创建TailObj
 	taillog.Init(logEntryConf)
+	newConfChan := taillog.PullNewConfChan()
+	var wg sync.WaitGroup
+	wg.Add(1)
+	go etcd.WatchConf(etcdConfKey, newConfChan)
+	wg.Wait()
 	//发往kafka
 	// err = taillog.Init(cfg.TaillogConf.FileName)
 	// if err != nil {

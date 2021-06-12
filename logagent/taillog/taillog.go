@@ -1,6 +1,7 @@
 package taillog
 
 import (
+	"context"
 	"fmt"
 	"golearn/logagent/kafka"
 
@@ -16,15 +17,21 @@ import (
 
 //TailTask:一个日志收集的任务
 type TailTask struct {
-	path     string
-	topic    string
-	instance *tail.Tail
+	path       string
+	topic      string
+	instance   *tail.Tail
+	ctx        context.Context
+	cancelFunc context.CancelFunc
 }
 
 func NewTailTask(path, topic string) (tailObj *TailTask) {
+
+	ctx, cancel := context.WithCancel(context.Background())
 	tailObj = &TailTask{
-		path:  path,
-		topic: topic,
+		path:       path,
+		topic:      topic,
+		ctx:        ctx,
+		cancelFunc: cancel,
 	}
 	tailObj.init() //根据路径去打开对应的日志
 	return
@@ -74,6 +81,9 @@ func (t *TailTask) run() {
 
 	for {
 		select {
+		case <-t.ctx.Done(): //配置项删除，配置退出
+			fmt.Printf("tailObj:%s_%s exit\n", t.path, t.topic)
+			return
 		case line := <-t.instance.Lines: //从tailObj的通道中一行一行的读取日志数据
 			//发往kafka
 			// kafka.SendToKafka(t.topic, line.Text)
