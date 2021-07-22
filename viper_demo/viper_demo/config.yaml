@@ -1,0 +1,20 @@
+Hacker: true
+name: steve
+hobbies:
+- skateboarding
+- snowboarding
+- go
+clothing:
+  jacket: leather
+  trousers: denim
+age: 35
+eyes : brown
+beard: true
+
+port: 8081
+version : "v0.0.1"
+
+mysql:
+  host: 127.0.0.1
+  port: 13306
+  dbname: mysql_demo
