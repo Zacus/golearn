@@ -1,0 +1,219 @@
+{"level":"DEBUG","time":"2021-06-27T16:13:35.375+0800","caller":"web_app/main.go:24","msg":"hello"}
+{"level":"DEBUG","time":"2021-06-27T16:32:45.569+0800","caller":"web_app/main.go:24","msg":"hello"}
+{"level":"DEBUG","time":"2021-06-27T17:07:01.343+0800","caller":"web_app/main.go:26","msg":"Log initialization successful"}
+{"level":"ERROR","time":"2021-06-27T17:07:01.763+0800","caller":"mysql/mysql.go:26","msg":"connect DB failed","error":"dial tcp 127.0.0.1:0: connectex: The requested address is not valid in its context."}
+{"level":"ERROR","time":"2021-06-27T17:07:01.793+0800","caller":"web_app/main.go:30","msg":"mysql initialization failed","error":"dial tcp 127.0.0.1:0: connectex: The requested address is not valid in its context."}
+{"level":"DEBUG","time":"2021-06-27T17:10:14.717+0800","caller":"web_app/main.go:26","msg":"Log initialization successful"}
+{"level":"ERROR","time":"2021-06-27T17:10:14.874+0800","caller":"mysql/mysql.go:27","msg":"connect DB failed","error":"dial tcp 127.0.0.1:0: connectex: The requested address is not valid in its context."}
+{"level":"ERROR","time":"2021-06-27T17:10:14.874+0800","caller":"web_app/main.go:30","msg":"mysql initialization failed","error":"dial tcp 127.0.0.1:0: connectex: The requested address is not valid in its context."}
+{"level":"DEBUG","time":"2021-06-27T17:11:50.349+0800","caller":"web_app/main.go:26","msg":"Log initialization successful"}
+{"level":"ERROR","time":"2021-06-27T17:11:52.544+0800","caller":"mysql/mysql.go:27","msg":"connect DB failed","error":"dial tcp 127.0.0.1:13306: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"ERROR","time":"2021-06-27T17:11:52.544+0800","caller":"web_app/main.go:30","msg":"mysql initialization failed","error":"dial tcp 127.0.0.1:13306: connectex: No connection could be made because the target machine actively refused it."}
+{"level":"DEBUG","time":"2021-06-27T17:13:13.006+0800","caller":"web_app/main.go:26","msg":"Log initialization successful"}
+{"level":"ERROR","time":"2021-06-27T17:13:13.276+0800","caller":"mysql/mysql.go:27","msg":"connect DB failed","error":"Error 1049: Unknown database 'sql_name'"}
+{"level":"ERROR","time":"2021-06-27T17:13:13.276+0800","caller":"web_app/main.go:30","msg":"mysql initialization failed","error":"Error 1049: Unknown database 'sql_name'"}
+{"level":"DEBUG","time":"2021-06-27T17:13:57.535+0800","caller":"web_app/main.go:26","msg":"Log initialization successful"}
+{"level":"DEBUG","time":"2021-06-27T17:14:49.384+0800","caller":"web_app/main.go:26","msg":"Log initialization successful"}
+{"level":"DEBUG","time":"2021-06-27T17:15:19.754+0800","caller":"web_app/main.go:26","msg":"Log initialization successful"}
+{"level":"DEBUG","time":"2021-06-27T17:18:32.796+0800","caller":"web_app/main.go:26","msg":"Log initialization successful"}
+{"level":"DEBUG","time":"2021-06-27T17:18:33.001+0800","caller":"web_app/main.go:33","msg":"database initialization successful"}
+{"level":"DEBUG","time":"2021-07-14T22:36:23.889+0800","caller":"web_app/main.go:27","msg":"Log initialization successful"}
+{"level":"DEBUG","time":"2021-07-14T22:36:24.519+0800","caller":"web_app/main.go:34","msg":"database initialization successful"}
+{"level":"ERROR","time":"2021-07-14T22:36:24.521+0800","caller":"web_app/main.go:37","msg":"redis initialization failed","error":"redis: invalid reply: \"J\\x00\\x00\\x00\\n\""}
+{"level":"DEBUG","time":"2021-07-14T22:46:58.946+0800","caller":"web_app/main.go:27","msg":"Log initialization successful"}
+{"level":"DEBUG","time":"2021-07-14T22:46:59.095+0800","caller":"web_app/main.go:34","msg":"database initialization successful"}
+{"level":"ERROR","time":"2021-07-14T22:46:59.194+0800","caller":"web_app/main.go:37","msg":"redis initialization failed","error":"dial tcp: lookup localhost:3306:3306: no such host"}
+{"level":"DEBUG","time":"2021-07-14T22:47:36.336+0800","caller":"web_app/main.go:27","msg":"Log initialization successful"}
+{"level":"DEBUG","time":"2021-07-14T22:47:36.483+0800","caller":"web_app/main.go:34","msg":"database initialization successful"}
+{"level":"ERROR","time":"2021-07-14T22:47:36.485+0800","caller":"web_app/main.go:37","msg":"redis initialization failed","error":"redis: invalid reply: \"J\\x00\\x00\\x00\\n\""}
+{"level":"DEBUG","time":"2021-07-17T11:51:21.441+0800","caller":"web_app/main.go:27","msg":"Log initialization successful"}
+{"level":"DEBUG","time":"2021-07-17T11:51:27.070+0800","caller":"web_app/main.go:34","msg":"database initialization successful"}
+{"level":"ERROR","time":"2021-07-17T11:51:27.195+0800","caller":"web_app/main.go:37","msg":"redis initialization failed","error":"redis: invalid reply: \"J\\x00\\x00\\x00\\n\""}
+{"level":"INFO","time":"2021-07-17T11:52:04.880+0800","caller":"web_app/main.go:27","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-17T11:52:05.040+0800","caller":"web_app/main.go:34","msg":"database initialization successful"}
+{"level":"ERROR","time":"2021-07-17T11:52:05.061+0800","caller":"web_app/main.go:37","msg":"redis initialization failed","error":"redis: invalid reply: \"J\\x00\\x00\\x00\\n\""}
+{"level":"INFO","time":"2021-07-17T16:23:35.090+0800","caller":"web_app/main.go:27","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-17T16:23:35.506+0800","caller":"web_app/main.go:34","msg":"database initialization successful"}
+{"level":"ERROR","time":"2021-07-17T16:23:35.794+0800","caller":"web_app/main.go:37","msg":"redis initialization failed","error":"redis: invalid reply: \"J\\x00\\x00\\x00\\n\""}
+{"level":"INFO","time":"2021-07-17T16:41:26.224+0800","caller":"web_app/main.go:27","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-17T16:41:26.543+0800","caller":"web_app/main.go:34","msg":"database initialization successful"}
+{"level":"INFO","time":"2021-07-17T16:41:26.613+0800","caller":"web_app/main.go:40","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-17T18:09:02.519+0800","caller":"web_app/main.go:27","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-17T18:09:02.918+0800","caller":"web_app/main.go:34","msg":"database initialization successful"}
+{"level":"INFO","time":"2021-07-17T18:09:02.988+0800","caller":"web_app/main.go:40","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-17T18:10:55.701+0800","caller":"web_app/main.go:27","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-17T18:10:56.066+0800","caller":"web_app/main.go:34","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-17T18:10:56.143+0800","caller":"web_app/main.go:40","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-17T18:11:57.827+0800","caller":"web_app/main.go:27","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-17T18:11:58.158+0800","caller":"web_app/main.go:34","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-17T18:11:58.217+0800","caller":"web_app/main.go:40","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:51:58.952+0800","caller":"web_app/main.go:28","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:51:59.386+0800","caller":"web_app/main.go:35","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:51:59.450+0800","caller":"web_app/main.go:41","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:52:55.485+0800","caller":"web_app/main.go:28","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:52:55.850+0800","caller":"web_app/main.go:35","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:52:55.929+0800","caller":"web_app/main.go:41","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:53:06.844+0800","caller":"web_app/main.go:28","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:53:07.209+0800","caller":"web_app/main.go:35","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:53:07.279+0800","caller":"web_app/main.go:41","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:53:07.279+0800","caller":"web_app/main.go:47","msg":"snowflake initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:56:06.610+0800","caller":"web_app/main.go:28","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:56:06.992+0800","caller":"web_app/main.go:35","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:56:07.082+0800","caller":"web_app/main.go:41","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-17T23:56:07.082+0800","caller":"web_app/main.go:47","msg":"snowflake initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:02:32.065+0800","caller":"web_app/main.go:35","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:02:32.470+0800","caller":"web_app/main.go:43","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:02:32.541+0800","caller":"web_app/main.go:51","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:02:32.541+0800","caller":"web_app/main.go:58","msg":"snowflake initialization successful"}
+{"level":"FATAL","time":"2021-07-18T11:02:32.576+0800","caller":"web_app/main.go:71","msg":"listen:","error":"listen tcp: address ᾑ: missing port in address"}
+{"level":"INFO","time":"2021-07-18T11:03:26.351+0800","caller":"web_app/main.go:35","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:03:26.678+0800","caller":"web_app/main.go:43","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:03:26.748+0800","caller":"web_app/main.go:51","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:03:26.748+0800","caller":"web_app/main.go:58","msg":"snowflake initialization successful"}
+{"level":"FATAL","time":"2021-07-18T11:03:26.752+0800","caller":"web_app/main.go:71","msg":"listen:","error":"listen tcp: address ᾐ: missing port in address"}
+{"level":"INFO","time":"2021-07-18T11:07:05.303+0800","caller":"web_app/main.go:35","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:07:05.654+0800","caller":"web_app/main.go:43","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:07:05.724+0800","caller":"web_app/main.go:51","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:07:05.730+0800","caller":"web_app/main.go:58","msg":"snowflake initialization successful"}
+{"level":"FATAL","time":"2021-07-18T11:07:05.800+0800","caller":"web_app/main.go:71","msg":"listen:","error":"listen tcp: lookup tcp/ᾐ: getaddrinfow: The specified class was not found."}
+{"level":"INFO","time":"2021-07-18T11:10:01.843+0800","caller":"web_app/main.go:35","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:10:02.171+0800","caller":"web_app/main.go:43","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:10:02.244+0800","caller":"web_app/main.go:51","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:10:02.244+0800","caller":"web_app/main.go:58","msg":"snowflake initialization successful"}
+{"level":"ERROR","time":"2021-07-18T11:10:51.301+0800","caller":"controller/user.go:20","msg":"SignUp with invaild param","error":"invalid character '\"' after object key:value pair"}
+{"level":"INFO","time":"2021-07-18T11:10:51.301+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0005468}
+{"level":"ERROR","time":"2021-07-18T11:12:07.892+0800","caller":"controller/user.go:20","msg":"SignUp with invaild param","error":"invalid character '\"' after object key:value pair"}
+{"level":"INFO","time":"2021-07-18T11:12:07.892+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0006166}
+{"level":"ERROR","time":"2021-07-18T11:12:38.347+0800","caller":"controller/user.go:20","msg":"SignUp with invaild param","error":"invalid character '\"' after object key:value pair"}
+{"level":"INFO","time":"2021-07-18T11:12:38.348+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0005957}
+{"level":"INFO","time":"2021-07-18T11:16:48.986+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0014796}
+{"level":"INFO","time":"2021-07-18T11:18:12.216+0800","caller":"web_app/main.go:83","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-18T11:18:12.227+0800","caller":"web_app/main.go:92","msg":"Server exiting"}
+{"level":"INFO","time":"2021-07-18T11:18:21.885+0800","caller":"web_app/main.go:35","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:18:22.283+0800","caller":"web_app/main.go:43","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:18:22.366+0800","caller":"web_app/main.go:51","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:18:22.366+0800","caller":"web_app/main.go:58","msg":"snowflake initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:18:47.012+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0006403}
+{"level":"INFO","time":"2021-07-18T11:22:08.274+0800","caller":"web_app/main.go:83","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-18T11:22:08.284+0800","caller":"web_app/main.go:92","msg":"Server exiting"}
+{"level":"INFO","time":"2021-07-18T11:22:16.638+0800","caller":"web_app/main.go:35","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:22:17.030+0800","caller":"web_app/main.go:43","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:22:17.098+0800","caller":"web_app/main.go:51","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:22:17.099+0800","caller":"web_app/main.go:58","msg":"snowflake initialization successful"}
+{"level":"INFO","time":"2021-07-18T11:22:22.323+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0010758}
+{"level":"ERROR","time":"2021-07-18T11:22:34.607+0800","caller":"controller/user.go:30","msg":"SignUp with invaild param"}
+{"level":"INFO","time":"2021-07-18T11:22:34.607+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0}
+{"level":"ERROR","time":"2021-07-18T11:22:46.090+0800","caller":"controller/user.go:30","msg":"SignUp with invaild param"}
+{"level":"INFO","time":"2021-07-18T11:22:46.091+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0009499}
+{"level":"INFO","time":"2021-07-18T12:02:15.872+0800","caller":"web_app/main.go:83","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-18T12:02:15.888+0800","caller":"web_app/main.go:92","msg":"Server exiting"}
+{"level":"INFO","time":"2021-07-18T12:03:06.007+0800","caller":"web_app/main.go:36","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-18T12:03:06.334+0800","caller":"web_app/main.go:44","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-18T12:03:06.405+0800","caller":"web_app/main.go:52","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-18T12:03:06.407+0800","caller":"web_app/main.go:59","msg":"snowflake initialization successful"}
+{"level":"ERROR","time":"2021-07-18T12:03:17.172+0800","caller":"controller/user.go:21","msg":"SignUp with invaild param","error":"Key: 'ParamSignUp.UserName' Error:Field validation for 'UserName' failed on the 'required' tag"}
+{"level":"INFO","time":"2021-07-18T12:03:17.172+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0005154}
+{"level":"ERROR","time":"2021-07-18T12:03:31.416+0800","caller":"controller/user.go:21","msg":"SignUp with invaild param","error":"Key: 'ParamSignUp.RePassword' Error:Field validation for 'RePassword' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2021-07-18T12:03:31.417+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0016073}
+{"level":"INFO","time":"2021-07-18T12:04:28.520+0800","caller":"web_app/main.go:89","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-18T12:04:28.530+0800","caller":"web_app/main.go:98","msg":"Server exiting"}
+{"level":"INFO","time":"2021-07-18T12:08:11.031+0800","caller":"web_app/main.go:36","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-18T12:08:11.372+0800","caller":"web_app/main.go:44","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-18T12:08:11.439+0800","caller":"web_app/main.go:52","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-18T12:08:11.439+0800","caller":"web_app/main.go:59","msg":"snowflake initialization successful"}
+{"level":"ERROR","time":"2021-07-18T12:08:15.400+0800","caller":"controller/user.go:21","msg":"SignUp with invaild param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2021-07-18T12:08:15.400+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0005778}
+{"level":"INFO","time":"2021-07-18T12:23:12.703+0800","caller":"web_app/main.go:89","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-18T12:23:12.714+0800","caller":"web_app/main.go:98","msg":"Server exiting"}
+{"level":"INFO","time":"2021-07-20T00:31:40.348+0800","caller":"web_app/main.go:36","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-20T00:31:40.967+0800","caller":"web_app/main.go:44","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-20T00:31:41.036+0800","caller":"web_app/main.go:52","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-20T00:31:41.037+0800","caller":"web_app/main.go:59","msg":"snowflake initialization successful"}
+{"level":"ERROR","time":"2021-07-20T00:31:49.421+0800","caller":"controller/user.go:21","msg":"SignUp with invaild param","error":"Key: 'ParamSignUp.re_password' Error:Field validation for 're_password' failed on the 'eqfield' tag"}
+{"level":"INFO","time":"2021-07-20T00:31:49.421+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0005804}
+{"level":"INFO","time":"2021-07-20T00:31:58.137+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0340624}
+{"level":"INFO","time":"2021-07-20T00:51:37.305+0800","caller":"web_app/main.go:89","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-20T00:51:37.307+0800","caller":"web_app/main.go:98","msg":"Server exiting"}
+{"level":"INFO","time":"2021-07-20T00:51:55.753+0800","caller":"web_app/main.go:36","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-20T00:51:56.204+0800","caller":"web_app/main.go:44","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-20T00:51:56.269+0800","caller":"web_app/main.go:52","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-20T00:51:56.269+0800","caller":"web_app/main.go:59","msg":"snowflake initialization successful"}
+{"level":"INFO","time":"2021-07-20T00:52:06.352+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0383332}
+{"level":"INFO","time":"2021-07-20T00:52:11.583+0800","caller":"web_app/main.go:89","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-20T00:52:11.594+0800","caller":"web_app/main.go:98","msg":"Server exiting"}
+{"level":"INFO","time":"2021-07-20T23:21:29.792+0800","caller":"web_app/main.go:36","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:21:30.125+0800","caller":"web_app/main.go:44","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:21:30.194+0800","caller":"web_app/main.go:52","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:21:30.195+0800","caller":"web_app/main.go:59","msg":"snowflake initialization successful"}
+{"level":"ERROR","time":"2021-07-20T23:21:38.325+0800","caller":"logic/user.go:37","msg":"database insert  failed","error":"Error 1136: Column count doesn't match value count at row 1"}
+{"level":"INFO","time":"2021-07-20T23:21:38.325+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.1205707}
+{"level":"INFO","time":"2021-07-20T23:25:36.409+0800","caller":"web_app/main.go:89","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-20T23:25:36.420+0800","caller":"web_app/main.go:98","msg":"Server exiting"}
+{"level":"INFO","time":"2021-07-20T23:25:46.308+0800","caller":"web_app/main.go:36","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:25:46.672+0800","caller":"web_app/main.go:44","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:25:46.733+0800","caller":"web_app/main.go:52","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:25:46.741+0800","caller":"web_app/main.go:59","msg":"snowflake initialization successful"}
+{"level":"ERROR","time":"2021-07-20T23:25:51.311+0800","caller":"logic/user.go:37","msg":"database insert  failed","error":"Error 1136: Column count doesn't match value count at row 1"}
+{"level":"INFO","time":"2021-07-20T23:25:51.311+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.1156527}
+{"level":"INFO","time":"2021-07-20T23:28:10.528+0800","caller":"web_app/main.go:89","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-20T23:28:10.538+0800","caller":"web_app/main.go:98","msg":"Server exiting"}
+{"level":"INFO","time":"2021-07-20T23:28:12.762+0800","caller":"web_app/main.go:36","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:28:13.181+0800","caller":"web_app/main.go:44","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:28:13.253+0800","caller":"web_app/main.go:52","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:28:13.253+0800","caller":"web_app/main.go:59","msg":"snowflake initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:28:16.301+0800","caller":"web_app/main.go:89","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-20T23:28:16.311+0800","caller":"web_app/main.go:98","msg":"Server exiting"}
+{"level":"INFO","time":"2021-07-20T23:28:27.458+0800","caller":"web_app/main.go:36","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:28:27.796+0800","caller":"web_app/main.go:44","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:28:27.858+0800","caller":"web_app/main.go:52","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:28:27.858+0800","caller":"web_app/main.go:59","msg":"snowflake initialization successful"}
+{"level":"ERROR","time":"2021-07-20T23:28:30.690+0800","caller":"logic/user.go:37","msg":"database insert  failed","error":"Error 1136: Column count doesn't match value count at row 1"}
+{"level":"INFO","time":"2021-07-20T23:28:30.691+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.1006066}
+{"level":"INFO","time":"2021-07-20T23:33:31.818+0800","caller":"web_app/main.go:89","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-20T23:33:31.827+0800","caller":"web_app/main.go:98","msg":"Server exiting"}
+{"level":"INFO","time":"2021-07-20T23:33:40.200+0800","caller":"web_app/main.go:36","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:33:40.592+0800","caller":"web_app/main.go:44","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:33:40.667+0800","caller":"web_app/main.go:52","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:33:40.668+0800","caller":"web_app/main.go:59","msg":"snowflake initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:33:45.284+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.1939903}
+{"level":"ERROR","time":"2021-07-20T23:43:40.040+0800","caller":"logic/user.go:21","msg":"data exited"}
+{"level":"INFO","time":"2021-07-20T23:43:40.040+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0671016}
+{"level":"ERROR","time":"2021-07-20T23:43:44.926+0800","caller":"logic/user.go:21","msg":"data exited"}
+{"level":"INFO","time":"2021-07-20T23:43:44.926+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0693925}
+{"level":"ERROR","time":"2021-07-20T23:45:29.079+0800","caller":"logic/user.go:21","msg":"data exited"}
+{"level":"INFO","time":"2021-07-20T23:45:29.079+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0695989}
+{"level":"ERROR","time":"2021-07-20T23:46:28.231+0800","caller":"logic/user.go:21","msg":"data exited"}
+{"level":"INFO","time":"2021-07-20T23:46:28.231+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.0678559}
+{"level":"INFO","time":"2021-07-20T23:54:14.425+0800","caller":"web_app/main.go:89","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-20T23:54:14.431+0800","caller":"web_app/main.go:98","msg":"Server exiting"}
+{"level":"INFO","time":"2021-07-20T23:57:59.744+0800","caller":"web_app/main.go:36","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:58:00.071+0800","caller":"web_app/main.go:44","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:58:00.159+0800","caller":"web_app/main.go:52","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-20T23:58:00.160+0800","caller":"web_app/main.go:59","msg":"snowflake initialization successful"}
+{"level":"ERROR","time":"2021-07-20T23:58:03.417+0800","caller":"logic/user.go:33","msg":"database insert  failed","error":"Error 1062: Duplicate entry 'zs' for key 'user.idx_username'"}
+{"level":"ERROR","time":"2021-07-20T23:58:03.417+0800","caller":"controller/user.go:51","msg":"SignUp with invaild param","error":"Error 1062: Duplicate entry 'zs' for key 'user.idx_username'"}
+{"level":"INFO","time":"2021-07-20T23:58:03.417+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.1334072}
+{"level":"INFO","time":"2021-07-21T00:03:33.827+0800","caller":"web_app/main.go:89","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-21T00:03:33.839+0800","caller":"web_app/main.go:98","msg":"Server exiting"}
+{"level":"INFO","time":"2021-07-21T00:04:14.391+0800","caller":"web_app/main.go:36","msg":"Log initialization successful"}
+{"level":"INFO","time":"2021-07-21T00:04:14.745+0800","caller":"web_app/main.go:44","msg":"mysql initialization successful"}
+{"level":"INFO","time":"2021-07-21T00:04:14.806+0800","caller":"web_app/main.go:52","msg":"redis initialization successful"}
+{"level":"INFO","time":"2021-07-21T00:04:14.807+0800","caller":"web_app/main.go:59","msg":"snowflake initialization successful"}
+{"level":"ERROR","time":"2021-07-21T00:04:18.049+0800","caller":"logic/user.go:33","msg":"database insert  failed","error":"Error 1062: Duplicate entry 'zs' for key 'user.idx_username'"}
+{"level":"ERROR","time":"2021-07-21T00:04:18.049+0800","caller":"controller/user.go:50","msg":"SignUp with invaild param","error":"Error 1062: Duplicate entry 'zs' for key 'user.idx_username'"}
+{"level":"INFO","time":"2021-07-21T00:04:18.049+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.137833}
+{"level":"INFO","time":"2021-07-21T00:04:30.611+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.1400411}
+{"level":"ERROR","time":"2021-07-21T00:04:35.886+0800","caller":"logic/user.go:33","msg":"database insert  failed","error":"Error 1062: Duplicate entry 'jty' for key 'user.idx_username'"}
+{"level":"ERROR","time":"2021-07-21T00:04:35.886+0800","caller":"controller/user.go:50","msg":"SignUp with invaild param","error":"Error 1062: Duplicate entry 'jty' for key 'user.idx_username'"}
+{"level":"INFO","time":"2021-07-21T00:04:35.886+0800","caller":"logger/logger.go:68","msg":"/signup","status":200,"method":"POST","path":"/signup","query":"","ip":"::1","user-agent":"PostmanRuntime/7.28.0","errors":"","cost":0.1391593}
+{"level":"INFO","time":"2021-07-21T00:04:42.816+0800","caller":"web_app/main.go:89","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-07-21T00:04:42.830+0800","caller":"web_app/main.go:98","msg":"Server exiting"}
+2021-07-21T21:36:52.646+0800	INFO	web_app/main.go:36	Log initialization successful
+2021-07-21T21:36:53.003+0800	INFO	web_app/main.go:44	mysql initialization successful
+2021-07-21T21:36:53.069+0800	INFO	web_app/main.go:52	redis initialization successful
+2021-07-21T21:36:53.070+0800	INFO	web_app/main.go:59	snowflake initialization successful
+2021-07-21T21:37:00.443+0800	ERROR	logic/user.go:33	database insert  failed	{"error": "Error 1062: Duplicate entry 'jty' for key 'user.idx_username'"}
+2021-07-21T21:37:00.443+0800	ERROR	controller/user.go:50	SignUp with invaild param	{"error": "Error 1062: Duplicate entry 'jty' for key 'user.idx_username'"}
+2021-07-21T21:37:00.443+0800	INFO	logger/logger.go:78	/signup	{"status": 200, "method": "POST", "path": "/signup", "query": "", "ip": "::1", "user-agent": "PostmanRuntime/7.28.2", "errors": "", "cost": "149.9469ms"}
+2021-07-21T21:37:34.646+0800	INFO	web_app/main.go:89	Shutdown Server ...
+2021-07-21T21:37:34.657+0800	INFO	web_app/main.go:98	Server exiting

@@ -1,0 +1,32 @@
+app:
+  name: "web_app"
+  mode: "dev"
+  start_time: "2021-07-01"
+  machine_id: 1
+  port: 8080
+  version: "v1.0"
+
+log:
+  level: "debug"
+  filename: "web_app.log"
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+mysql:
+  host: "60.205.227.168"
+  port: 3306
+  user: root
+  password: "123456"
+  dbname: "bulebell"
+  max_open_conns: 100
+  max_idle_conns: 50
+
+redis:
+  host: "60.205.227.168"
+  user: bule-reids
+  password: ""
+  port: 6379
+  m_db: 0
+  max_open_conns: 100
+
