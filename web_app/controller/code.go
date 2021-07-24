@@ -9,6 +9,10 @@ const (
 	CodeUserNoExist
 	CodeInvaildLogin
 	CodeInvaildBusy
+
+	CodeAuthIsEmpty
+	CodeAuthFormatError
+	CodeInvalidToken
 )
 
 var codeToMsg = map[ResCode]string{
@@ -18,6 +22,10 @@ var codeToMsg = map[ResCode]string{
 	CodeUserNoExist:  "User does not exist",
 	CodeInvaildLogin: "Invalid user name or password",
 	CodeInvaildBusy:  "Service is busy",
+
+	CodeAuthIsEmpty:     "auth is empty",
+	CodeAuthFormatError: "error in auth format",
+	CodeInvalidToken:    "invaild token",
 }
 
 func (c ResCode) Msg() string {

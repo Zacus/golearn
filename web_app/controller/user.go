@@ -95,10 +95,12 @@ func LoginHandler(c *gin.Context) {
 		return
 	}
 	//2.逻辑处理
-	if err := logic.Login(p); err != nil {
+	token, err := logic.Login(p)
+	if err != nil {
 		ResposeError(c, CodeInvaildLogin)
 		return
 	}
+
 	//3.返回响应
-	ResposeSuccess(c, "login sucess")
+	ResposeSuccess(c, token)
 }

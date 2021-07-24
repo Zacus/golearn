@@ -3,6 +3,7 @@ package logic
 import (
 	"golearn/web_app/dao/mysql"
 	"golearn/web_app/models"
+	"golearn/web_app/pkg/jwt"
 	"golearn/web_app/pkg/snowflake"
 
 	"go.uber.org/zap"
@@ -38,8 +39,9 @@ func SignUp(p *models.ParamSignUp) (err error) {
 }
 
 //登录逻辑
-func Login(p *models.ParamLogin) (err error) {
+func Login(p *models.ParamLogin) (token string, err error) {
 	//判断用户是否存在，判断密码是否正确
+	token = ""
 	user := &models.User{
 		UserName: p.UserName,
 		Password: p.Password,
@@ -48,6 +50,8 @@ func Login(p *models.ParamLogin) (err error) {
 		zap.L().Error("Login  failed", zap.Error(err))
 		return
 	}
-	return
+
+	//生成token
+	return jwt.GenToken(user.UserID, user.UserName)
 
 }
