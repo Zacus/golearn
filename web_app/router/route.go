@@ -15,10 +15,10 @@ func SetupRouter() *gin.Engine {
 	r.Use(logger.GinLogger(), logger.GinRecovery(true))
 
 	//注册业务路由
-	r.POST("/signup", controller.SignUpHandler)
+	r.POST("/api/v1/signup", controller.SignUpHandler)
 
 	//登录业务路由
-	r.POST("/login", controller.LoginHandler)
+	r.POST("/api/v1/login", controller.LoginHandler)
 
 	r.GET("/ping", middlewares.JWTAuthMiddleware(), func(c *gin.Context) {
 		//如果是登录的用户，判断请求头中是否有 有效的JWT

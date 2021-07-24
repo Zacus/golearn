@@ -3,7 +3,7 @@ app:
   mode: "dev"
   start_time: "2021-07-01"
   machine_id: 1
-  port: 8080
+  port: 8081
   version: "v1.0"
 
 log:
