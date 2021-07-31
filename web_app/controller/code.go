@@ -8,7 +8,7 @@ const (
 	CodeUserExist
 	CodeUserNoExist
 	CodeInvaildLogin
-	CodeInvaildBusy
+	CodeServerBusy
 
 	CodeAuthIsEmpty
 	CodeAuthFormatError
@@ -21,7 +21,7 @@ var codeToMsg = map[ResCode]string{
 	CodeUserExist:    "User already exists",
 	CodeUserNoExist:  "User does not exist",
 	CodeInvaildLogin: "Invalid user name or password",
-	CodeInvaildBusy:  "Service is busy",
+	CodeServerBusy:   "Service is busy",
 
 	CodeAuthIsEmpty:     "auth is empty",
 	CodeAuthFormatError: "error in auth format",
@@ -31,7 +31,7 @@ var codeToMsg = map[ResCode]string{
 func (c ResCode) Msg() string {
 	msg, ok := codeToMsg[c]
 	if !ok {
-		msg = codeToMsg[CodeInvaildBusy]
+		msg = codeToMsg[CodeServerBusy]
 	}
 	return msg
 }
