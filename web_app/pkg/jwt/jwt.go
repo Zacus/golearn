@@ -8,7 +8,7 @@ import (
 )
 
 //jwt过期时间
-const TokenExpireDuration = time.Hour * 2
+const TokenExpireDuration = time.Hour * 24
 
 var JwtSecret = []byte("烟花")
 
@@ -30,7 +30,7 @@ func GenToken(userid int64, username string) (string, error) {
 		username, // 自定义字段
 		jwt.StandardClaims{
 			ExpiresAt: time.Now().Add(TokenExpireDuration).Unix(), // 过期时间
-			Issuer:    "bulebell",                                 // 签发人
+			Issuer:    "bluebell",                                 // 签发人
 		},
 	}
 	// 使用指定的签名方法创建签名对象
