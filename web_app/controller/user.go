@@ -25,14 +25,14 @@ func SignUpHandler(c *gin.Context) {
 			// c.JSON(http.StatusOK, gin.H{
 			// 	"msg": err.Error(),
 			// })
-			ResposeErrorWithMsg(c, CodeInvaildParam, err.Error())
+			ResponseErrorWithMsg(c, CodeInvaildParam, err.Error())
 			return
 		}
 		// validator.ValidationErrors类型错误则进行翻译
 		// c.JSON(http.StatusOK, gin.H{
 		// 	"msg": removeTopStruct(errs.Translate(trans)),
 		// })
-		ResposeErrorWithMsg(c, CodeInvaildParam, removeTopStruct(errs.Translate(trans)))
+		ResponseErrorWithMsg(c, CodeInvaildParam, removeTopStruct(errs.Translate(trans)))
 		return
 	}
 
@@ -57,14 +57,14 @@ func SignUpHandler(c *gin.Context) {
 			// c.JSON(http.StatusOK, gin.H{
 			// 	"msg": err.Error(),
 			// })
-			ResposeErrorWithMsg(c, CodeInvaildParam, err.Error())
+			ResponseErrorWithMsg(c, CodeInvaildParam, err.Error())
 			return
 		}
 		// validator.ValidationErrors类型错误则进行翻译
 		// c.JSON(http.StatusOK, gin.H{
 		// 	"msg": removeTopStruct(errs.Translate(trans)),
 		// })
-		ResposeErrorWithMsg(c, CodeInvaildParam, removeTopStruct(errs.Translate(trans)))
+		ResponseErrorWithMsg(c, CodeInvaildParam, removeTopStruct(errs.Translate(trans)))
 		return
 	}
 
@@ -72,10 +72,11 @@ func SignUpHandler(c *gin.Context) {
 	// c.JSON(http.StatusOK, gin.H{
 	// 	"msg": "Registered successfully",
 	// })
-	ResposeSuccess(c, "Registered successfully")
+	ResponseSuccess(c, "Registered successfully")
 
 }
 
+//处理登录请求的函数
 func LoginHandler(c *gin.Context) {
 
 	//1.获取请求参数，参数校验.
@@ -87,20 +88,20 @@ func LoginHandler(c *gin.Context) {
 		errs, ok := err.(validator.ValidationErrors)
 		if !ok {
 			// 非validator.ValidationErrors类型错误直接返回
-			ResposeErrorWithMsg(c, CodeInvaildParam, err.Error())
+			ResponseErrorWithMsg(c, CodeInvaildParam, err.Error())
 			return
 		}
 		// validator.ValidationErrors类型错误则进行翻译
-		ResposeErrorWithMsg(c, CodeInvaildParam, removeTopStruct(errs.Translate(trans)))
+		ResponseErrorWithMsg(c, CodeInvaildParam, removeTopStruct(errs.Translate(trans)))
 		return
 	}
 	//2.逻辑处理
 	token, err := logic.Login(p)
 	if err != nil {
-		ResposeError(c, CodeInvaildLogin)
+		ResponseError(c, CodeInvaildLogin)
 		return
 	}
 
 	//3.返回响应
-	ResposeSuccess(c, token)
+	ResponseSuccess(c, token)
 }
