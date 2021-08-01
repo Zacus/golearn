@@ -33,6 +33,8 @@ func SetupRouter() *gin.Engine {
 		// v1.GET("/post", controller.PostList2Handler)	//获取帖子列表
 		v1.GET("/post", controller.PostListHandler) //获取帖子列表，分页
 
+		v1.POST("/vote", controller.PostVoteHandler) //获取帖子列表，分页
+
 	}
 
 	v1.GET("/ping", middlewares.JWTAuthMiddleware(), func(c *gin.Context) {

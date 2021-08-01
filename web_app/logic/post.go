@@ -3,6 +3,7 @@ package logic
 import (
 	"fmt"
 	"golearn/web_app/dao/mysql"
+	"golearn/web_app/dao/redis"
 	"golearn/web_app/models"
 	"golearn/web_app/pkg/snowflake"
 
@@ -22,21 +23,23 @@ func CreatePost(post *models.Post) (err error) {
 		zap.L().Error("mysql.CreatePost(&post) failed", zap.Error(err))
 		return err
 	}
+	zap.L().Info("mysql.CreatePost(&post) success")
 	//存储到数据库
-	// community, err := mysql.GetCommunityNameByID(fmt.Sprint(post.CommunityID))
-	// if err != nil {
-	// 	zap.L().Error("mysql.GetCommunityNameByID failed", zap.Error(err))
-	// 	return err
-	// }
-	// if err := redis.CreatePost(
-	// 	fmt.Sprint(post.PostID),
-	// 	fmt.Sprint(post.AuthorId),
-	// 	post.Title,
-	// 	TruncateByWords(post.Content, 120),
-	// 	community.CommunityName); err != nil {
-	// 	zap.L().Error("redis.CreatePost failed", zap.Error(err))
-	// 	return err
-	// }
+	community, err := mysql.GetCommunityNameByID(fmt.Sprint(post.CommunityID))
+	if err != nil {
+		zap.L().Error("mysql.GetCommunityNameByID failed", zap.Error(err))
+		return err
+	}
+	zap.L().Info("mysql.GetCommunityNameByID success")
+	if err := redis.CreatePost(
+		fmt.Sprint(post.PostID),
+		fmt.Sprint(post.AuthorId),
+		post.Title,
+		TruncateByWords(post.Content, 120),
+		community.CommunityName); err != nil {
+		zap.L().Error("redis.CreatePost failed", zap.Error(err))
+		return err
+	}
 	//返回
 	return
 

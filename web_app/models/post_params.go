@@ -16,6 +16,12 @@ type Post struct {
 	CreateTime  time.Time `json:"-" db:"create_time"`
 }
 
+type VoteData struct {
+	//userID
+	PostID    string `json:"post_id" binding:"required"`                       //帖子id
+	Direction int8   `json:"direction,string" binding:"required,oneof=-1 0 1"` //赞成票(1)还是反对票(-1)
+}
+
 func (p *Post) UnmarshalJSON(data []byte) (err error) {
 	required := struct {
 		Title       string `json:"title" db:"title"`
